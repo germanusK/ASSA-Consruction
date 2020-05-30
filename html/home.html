@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
     <script src="../jquery/jquery-3.3.1.min.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/home.js"></script>
     <title>ASSA Construction</title>
 
-    <link rel="stylesheet" href="../css/header-footer.css">
     <style>
         #upperBodyDiv{
             /* height: 70vh; */
             width: 100%;
-            background-image: url("../images/bgimage3.png.png");
+            background-image: url("../images/bgimage3.png");
             background-size: cover;
             background-position: center;
         }
@@ -72,26 +73,45 @@
         height: 60vh;
         align-content: center;
         justify-content: baseline;
-    }
-    #middleContainer, #innerContainer{
-        height: 60%;
-        align-self: center;
-        margin: 35% 25% auto 25%;
-        bottom: 20%;
-        justify-items: baseline;
-        justify-self: baseline;
-    }
-    @media screen and (width : 400){
-        #middleContainer, #innerContainer{
-            height: 40%;
         }
-    }
-    #mainContainer, #middleContainer, #innerContainer{
-         border: 4px inset blue;
-        border-radius: 2rem;
-    }
-    #middleContainer{background-color: blue;}
-    #innerContainer{background: repeating-radial-gradient(#0f7cff, #051a1a, #1b0ab3);}
+        #middleContainer, #innerContainer{
+            height: 60%;
+            align-self: center;
+            margin: 35% 25% auto 25%;
+            bottom: 20%;
+            justify-items: baseline;
+            justify-self: baseline;
+        }
+        @media screen and (width : 400){
+            #middleContainer, #innerContainer{
+                height: 40%;
+            }
+        }
+        #mainContainer, #middleContainer, #innerContainer{
+            border: 4px inset blue;
+            border-radius: 2rem;
+        }
+        #middleContainer{background-color: blue;}
+        #innerContainer{background: repeating-radial-gradient(#022186, #79887b, #010977);}
+
+
+        #uniImageCarousel{
+            width: 80%;
+            margin: 4rem auto;
+        }
+        #uniImageCarouselFrame{
+            /* background-image: url('../images/bgimage3.png'); */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        /* .slideGalleryItem{
+            border-spacing: 1rem;
+            padding: 1rem auto;
+        } */
+        /* #imageSliderGallery{
+            background: #000;
+        } */
     </style>
 </head>
 <body>
@@ -99,70 +119,28 @@
         <div id="headerButtom" class="container-fluid">
              <!--Design of the title and navigation bar-->
              <div id="ngo-header-title-bar" class="text-center"><p><i><b>ASSA Construction</b></i></p></div>
-    <div id="ngo-header" class="row container-fluid">
-        <div class="col-md-3">
-           
-        </div>
-        <div class="col-md-9" id="ngo-header-main-heading">
-            <div id="ngo-header-nav" class="text-center row">
-                <a href="" class="my-auto navbar-btn btn-lg"><i class="fa fa-home"></i><label for="home">Home</label></a>
-                <a href="" class="my-auto navbar-btn btn-lg"><i class="fa fa-umbrella"></i><label for="services">Services</label></a>
-                <a href="" class="my-auto navbar-btn btn-lg"><i class="fa fa-space-shuttle"></i><label for="portfolio">Portfolio</label></a>
-                <a href="" class="my-auto navbar-btn btn-lg"><i class="fa fa-phone"></i><label for="contact">Contact</label></a>
+            <div id="ngo-header" class="row container-fluid">
+                <div class="col-md-3">
+                
+                </div>
+                <div class="col-md-9" id="ngo-header-main-heading">
+                    <div id="ngo-header-nav" class="text-center row">
+                        <a href="" class="my-auto navbar-btn btn-lg"><i class="fa fa-home"></i><label for="home">Home</label></a>
+                        <a href="" class="my-auto navbar-btn btn-lg"><i class="fa fa-umbrella"></i><label for="services">Services</label></a>
+                        <a href="" class="my-auto navbar-btn btn-lg"><i class="fa fa-space-shuttle"></i><label for="portfolio">Portfolio</label></a>
+                        <a href="" class="my-auto navbar-btn btn-lg"><i class="fa fa-phone"></i><label for="contact">Contact</label></a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-        </div>
-
-        
-            <div id="designSlideShow" class="row">
+        </div> 
+        <div id="designSlideShow" class="row">
                 <div class="col-xs-12 col-lg-5" id="zang-fields-left">
                     <div id="mainContainer" class="col-lg-12 text-center">
                         <div id="middleContainer" class="mx-auto">
                             <a href=""><div id="innerContainer"></div></a>
                         </div>
                     </div>
-                    <script>
-                       let myButton = document.createElement("div");
-                       myButton.style.height = '25%';
-                       myButton.style.width = '22%';
-                    // myButton.className = "col-lg-2 col-sm-2 col-xs-2"
-                       myButton.style.backgroundColor = 'white';
-                       myButton.style.position = 'absolute';
-                       myButton.style.borderRadius = '3px'
-
-                       let buttonImage = document.createElement("img");
-                       buttonImage.style.height = '100%';
-                       buttonImage.style.width = '100%';
-                       buttonImage.src = '../images/bgimage4.png.png';
-
-                       myButton.appendChild(buttonImage);
-
-                       document.getElementById("mainContainer").appendChild(myButton);
-                       let top1 = 75; let left1 = 3;
-                       let topl = 3; let topu = 75;
-                       let leftl = 3; let leftu = 75;
-                
-                       setInterval(function(){
-                           if(top1 > topl && left1 == leftl){
-                               top1 -= 0.125;
-                           }
-                           else if(top1 == topl && left1 < leftu){
-                               left1 += 0.125;
-                           }
-                           else if(top1 < topu && left1 == leftu){
-                               top1 += 0.125;
-                           }
-                           else{
-                               top1 = 75;
-                               left1 = 3;
-                           }
-                           myButton.style.left = left1 +'%';
-                           
-                           myButton.style.top = top1 +'%';
-                       }, 15);
-                
-                    </script>
+                   
                 </div>
                 <div class="col-xs-12 col-sm-7" id="zang-fields-right">
                     <div id="zang-fields-main-image-frame">
@@ -179,19 +157,19 @@
                             <!--carousel inner: i.e displayed data-->
                             <div class="carousel-inner">
                                 <div class="item active embed-responsive embed-responsive-16by9">
-                                    <img src="../images/bgimage1.png.png" alt="" class="img-responsive">
+                                    <img src="../images/bgimage1.png" alt="" class="img-responsive">
                                 </div>
                                 <div class="item embed-responsive embed-responsive-16by9">
-                                    <img src="../images/bgimage2.png.png" alt="" class="img-responsive">
+                                    <img src="../images/bgimage2.png" alt="" class="img-responsive">
                                 </div>
                                 <div class="item embed-responsive embed-responsive-16by9">
-                                    <img src="../images/bgimage3.png.png" alt="" class="img-responsive">
+                                    <img src="../images/bgimage3.png" alt="" class="img-responsive">
                                 </div>
                                 <div class="item embed-responsive embed-responsive-16by9">
-                                    <img src="../images/bgimage4.png.png" alt="" class="img-responsive">
+                                    <img src="../images/bgimage4.png" alt="" class="img-responsive">
                                 </div>
                                 <div class="item embed-responsive embed-responsive-16by9">
-                                    <img src="../images/bgimage5.png.png" alt="" class="img-responsive">
+                                    <img src="../images/bgimage5.png" alt="" class="img-responsive">
                                 </div>
                             </div>
                             <!--carousel controls-->
@@ -214,106 +192,40 @@
     2)carousel sliding different text(captions) upon the same image
     -->
     <div id="lowerBodyDiv" class="container-fluid">
-        <div id="imageSliderGallery" class="row container-fluid text-center">
-            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-md-5 col-lg-5 slideGalleryItem">
+        <div id="imageSliderGallery" class="row container-fluid">
+            <div class="col-xs-10 col-sm-6 col-lg-4 slideGalleryItem">
                 <div class="embed-responsive embed-responsive-4by3 itemFrame">
-                    <img src="../images/bgimage5.png.png" alt="" class="img img-thumbnail img-responsive">
+                    <img src="../images/bgimage5.png" alt="" class="img-thumbnail">
                 </div>
             </div>
-            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-md-5 col-lg-5 slideGalleryItem">
+            <div class="col-xs-10 col-sm-6 col-lg-4 slideGalleryItem">
                 <div class="embed-responsive embed-responsive-4by3 itemFrame">
-                    <img src="../images/bgimage4.png.png" alt="" class="img img-thumbnail img-responsive">
+                    <img src="../images/bgimage4.png" alt="" class="img-thumbnail">
                 </div>
             </div>
-            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-md-5 col-lg-5 slideGalleryItem">
+            <div class="col-xs-10 col-sm-6 col-lg-4 slideGalleryItem">
                 <div class="embed-responsive embed-responsive-4by3 itemFrame">
-                    <img src="../images/bgimage6.png.png" alt="" class="img img-thumbnail img-responsive">
+                    <img src="../images/bgimage6.png" alt="" class="img-thumbnail">
                 </div>
             </div>
-            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-md-5 col-lg-5 slideGalleryItem">
+            <div class="col-xs-10 col-sm-6 col-lg-4 slideGalleryItem">
                 <div class="embed-responsive embed-responsive-4by3 itemFrame">
-                    <img src="../images/bgimage7.png.png" alt="" class="img img-thumbnail img-responsive">
+                    <img src="../images/bgimage7.png" alt="" class="img-thumbnail">
+                </div>
+            </div>
+            <div class="col-xs-10 col-sm-6 col-lg-4 slideGalleryItem">
+                <div class="embed-responsive embed-responsive-4by3 itemFrame">
+                    <img src="../images/bgimage7.png" alt="" class="img-thumbnail">
+                </div>
+            </div>
+            <div class="col-xs-10 col-sm-6 col-lg-4 slideGalleryItem">
+                <div class="embed-responsive embed-responsive-4by3 itemFrame">
+                    <img src="../images/bgimage7.png" alt="" class="img-thumbnail">
                 </div>
             </div>
         </div>
-        <div id="uniImageCarouselFrame" class="container-fluid ">
-            <div id="uniImageCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
-                <!--indicators-->
-                <ol class="carousel-indicators">
-                    <li data-target="#uniImageCarousel", data-slide-to="0" class="active"></li>
-                </ol>
-                <!--carousel inner: i.e displayed data-->
-                <div class="carousel-inner">
-                    <div class="item active embed-responsive embed-responsive-16by9 text-center">
-                        <img src="../images/bgimage1.png.png" alt="" class="img-responsive">
-                        <div class="carousel-caption">
-                            <!--can possibly replace this image view with a carousel image slide-->
-                        <div id="designSlideShow-carousel2" class="carousel slide" data-ride="carousel" data-interval="10000">
-                            <!--indicators-->
-                            <ol class="carousel-indicators">
-                                <li data-target="#designSlideShow-carousel2", data-slide-to="0" class="active"></li>
-                                <li data-target="#designSlideShow-carousel2", data-slide-to="1"></li>
-                                <li data-target="#designSlideShow-carousel2", data-slide-to="2"></li>
-                                <li data-target="#designSlideShow-carousel2", data-slide-to="3"></li>
-                                <li data-target="#designSlideShow-carousel2", data-slide-to="4"></li>
-                            </ol>
-                            <!--carousel inner: i.e displayed data-->
-                            <div class="carousel-inner">
-                                <div class="item active embed-responsive embed-responsive-16by9">
-                                    <img src="../images/bgimage1.png.png" alt="" class="img-responsive">
-                                </div>
-                                <div class="item embed-responsive embed-responsive-16by9">
-                                    <img src="../images/bgimage2.png.png" alt="" class="img-responsive">
-                                </div>
-                                <div class="item embed-responsive embed-responsive-16by9">
-                                    <img src="../images/bgimage3.png.png" alt="" class="img-responsive">
-                                </div>
-                                <div class="item embed-responsive embed-responsive-16by9">
-                                    <img src="../images/bgimage4.png.png" alt="" class="img-responsive">
-                                </div>
-                                <div class="item embed-responsive embed-responsive-16by9">
-                                    <img src="../images/bgimage5.png.png" alt="" class="img-responsive">
-                                </div>
-                            </div>
-                            <!--carousel controls-->
-                            <a href="#designSlideShow-carousel2" data-slide="prev" class="left carousel-control">
-                                <span class="fa fa-sign-out"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a href="#designSlideShow-carousel2" data-slide="next" class="right carousel-control">
-                                <span class="fa fa-sign-in"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                        </div>
-                    </div>
-                  
-                </div>
-                <!--carousel controls-->
-                <!-- <a href="#uniImageCarousel" data-slide="prev" class="left carousel-control">
-                    <span class="fa fa-sign-out"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a href="#uniImageCarousel" data-slide="next" class="right carousel-control">
-                    <span class="fa fa-sign-in"></span>
-                    <span class="sr-only">Next</span></a> -->
-            </div>
-        </div>
-    </div>
-    <script>
-        let bgimages = ["../images/bgimage1.png.png", "../images/bgimage2.png.png", "../images/bgimage3.png.png",
-                        "../images/bgimage4.png.png", "../images/bgimage5.png.png", "../images/bgimage6.png.png",
-                        "../images/bgimage7.png.png"];
-        let im = 0;
-        // doslideshow();
-
-        function doslideshow() {
-            if (im >= bgimages.length) {
-            im = 0;
-        }
-        $("#upperBodyDiv").css("background-image", 'url("'+bgimages[im]+'")').fadeIn(750, function(){setTimeout(doslideshow(), 6000)});
-        }
         
-    </script>
+    </div>
+    
 </body>
 </html>
