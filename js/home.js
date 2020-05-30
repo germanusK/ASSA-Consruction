@@ -1,4 +1,7 @@
  $(function(){
+     let ourStandardsImages = [];
+     let OurServicesImage = [];
+     let designImages = [];
     let bgimages = new Array("../images/bgimage1.png", "../images/bgimage2.png", "../images/bgimage3.png",
                 "../images/bgimage4.png", "../images/bgimage5.png", "../images/bgimage6.png",
                 "../images/bgimage7.png");
@@ -96,10 +99,19 @@
 
     // $(uniImageCarouselFrame).css("display", "none");
     $(uniImageCarouselFrame).css("background-image", "url('"+bgimages[im++%bgimages.length]+"')");
-    $(uniImageCarouselFrame).css("background-image").fadeIn();
     $(uniImageCarouselFrame).fadeIn(4000);}, 16000);
 
 $("#lowerBodyDiv").append(uniImageCarouselFrame);
 }
 
- })
+
+setInterval(function(){
+    $(".slideGalleryItem > div").animate({"left": "+=3rem", "top": "+=3rem", "right":"-=3rem", "bottom":"-=3rem"}, "slow");
+    $(".slideGalleryItem img").fadeOut();
+    document.querySelectorAll(".slideGalleryItem img").forEach(element => {
+        $(element).attr("src", bgimages[Math.floor(Math.random()*bgimages.length)]);
+    });
+    $(".slideGalleryItem img").fadeIn();
+    $(".slideGalleryItem > div").animate({"left":"-=3rem", "top": "-=3rem", "right": "+=3rem", "bottom": "+=3rem"}, "slow");
+}, 16000);
+ });
