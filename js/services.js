@@ -30,37 +30,7 @@
     myButton.style.position = 'absolute';
     myButton.style.borderRadius = '3px'
 
-    let buttonImage = document.createElement("img");
-    buttonImage.style.height = '100%';
-    buttonImage.style.width = '100%';
-    buttonImage.src = '../images/bgimage4.png';
-
-    myButton.appendChild(buttonImage);
-
-    document.getElementById("mainContainer").appendChild(myButton);
-    let top1 = 75; let left1 = 3;
-    let topl = 3; let topu = 75;
-    let leftl = 3; let leftu = 75;
-
-    setInterval(function(){
-        if(top1 > topl && left1 == leftl){
-            top1 -= 0.125;
-        }
-        else if(top1 == topl && left1 < leftu){
-            left1 += 0.125;
-        }
-        else if(top1 < topu && left1 == leftu){
-            top1 += 0.125;
-        }
-        else{
-            top1 = 75;
-            left1 = 3;
-        }
-        myButton.style.left = left1 +'%';
-        
-        myButton.style.top = top1 +'%';
-    }, 15);
-
+   
    { 
     let uniImageCarouselFrame = document.createElement("div");
     uniImageCarouselFrame.id = "uniImageCarouselFrame";

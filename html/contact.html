@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <script src="../jquery/jquery-3.3.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/contact.js"></script>
+    <title>Contact</title>
+
+    <style>
+        #upperBodyDiv{
+            /* height: 70vh; */
+            width: 100%;
+            background-image: url("../images/skuffwdd245.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        /* #headerTop{
+            height: 15vh;
+            min-height: 3rem;
+        } */
+        #headerButtom{
+            height: auto;
+            margin: 0 auto;
+            position: sticky;
+            border-bottom: 3px solid white;
+        }
+        #logoBox{
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* height: 100px;
+            width: 100px; */
+        }
+      
+
+
+        #zang-fields-main-image-frame{
+            height: auto;
+            margin: 1rem;
+        }
+        #designSlideShow-carousel, #designSlideShow-carousel2{
+            width: 100%;
+            height: auto
+        }
+        #designSlideShow{
+            width: 90%;
+            margin: 10rem auto 2rem auto;
+            height: auto;
+        }
+        #zang-fields-heading{
+            font-size: xx-large;
+            font-style: oblique;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: white;
+            text-decoration-line: unset;
+            border-radius: 5px 2px;
+            margin: 1rem 2rem;
+        }
+        #zang-fields-note{
+            background-color: white;
+            border-radius: 5px 2px;
+            margin: 1rem 2rem;
+            padding: 1rem;
+            min-height: 35rem;
+        }#zang-fields-caption{
+            min-height: 5rem;
+            background-color: thistle;
+            color: black;
+            margin: 3rem 1rem;
+            border-radius: 5px 2px;
+        }
+
+
+        #uniImageCarousel{
+            width: 80%;
+            margin: 4rem auto;
+            opacity: 0.8;
+        }
+        #uniImageCarouselFrame{
+            /* background-image: url('../images/bgimage3.png'); */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        /* .slideGalleryItem{
+            border-spacing: 1rem;
+            padding: 1rem auto;
+        } */
+        /* #imageSliderGallery{
+            background: #000;
+        } */
+    
+        #textBlock, #textBlock2, #textBlock1Heading,#textBlock2Heading{
+            align-self: flex-start;
+            font: outline;
+            font-weight: bolder;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: black;
+        }
+        #textBlock, #textBlock2{
+            font-size: x-large;
+            margin: 3rem 2rem;
+        }
+        #textBlock1Heading, #textBlock2Heading{
+            font-size: xx-large;
+        }
+        #footer{
+            color: white;
+            background-color: black;
+            font-weight: bold;
+            margin-top: 8rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="upperBodyDiv" >
+        <div id="headerButtom" class="container-fluid">
+             <!--Design of the title and navigation bar-->
+             <a class="col-xs-3 col-sm-2 col-md-2" id="logoBox" href="home.html">
+                    <div class="col-sm-5">
+                        <div class="embed-responsive embed-responsive-4by3 container-fluid ">
+                            <img src="../images/skuffwdd121.jpg" alt="" class="img-responsive img-circle">
+                        </div>
+                    </div>
+                </a>
+             <div id="ngo-header-title-bar" class="text-center"><p><i><b>ASSA Construction</b></i></p></div>
+            <div id="ngo-header" class="navbar row container-fluid">
+                <div class="col-md-3 navbar navbar-header">
+                    <button type="button" class="navbar-toggle" data-target="#ngo-header-main-heading" data-toggle="collapse">
+                        <span class="sr-only">top-nav toggler</span>
+                        <span class="fa fa-navicon text-white">1</span>
+                    </button>
+                </div>
+                <div class="col-md-9 navbar-collapse" id="ngo-header-main-heading">
+                    
+                    <div id="ngo-header-nav" class="text-center row">
+                        <a href="home.html" class="my-auto navbar-btn btn-lg"><i class="fa fa-home"></i><label for="home">Home</label></a>
+                        <a href="services.html" class="my-auto navbar-btn btn-lg"><i class="fa fa-umbrella"></i><label for="services">Services</label></a>
+                        <a href="portfolio.html" class="my-auto navbar-btn btn-lg"><i class="fa fa-space-shuttle"></i><label for="portfolio">Portfolio</label></a>
+                        <a href="contact.html" class="my-auto navbar-btn btn-lg"><i class="fa fa-phone"></i><label for="contact">Contact</label></a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div id="designSlideShow" class="container-fluid">
+            
+            <div class="container-fluid" id="zang-fields-right">
+                <div id="zang-fields-main-image-frame">
+                    <!--can possibly replace this image view with a carousel image slide-->
+                    <div id="designSlideShow-carousel" class="carousel slide mx-2 my-2" data-ride="carousel" data-interval="10000">
+                        <!--indicators-->
+                        <!-- <ol class="carousel-indicators">
+                            <li data-target="#designSlideShow-carousel", data-slide-to="0" class="active"></li>
+                            <li data-target="#designSlideShow-carousel", data-slide-to="1"></li>
+                            <li data-target="#designSlideShow-carousel", data-slide-to="2"></li>
+                            <li data-target="#designSlideShow-carousel", data-slide-to="3"></li>
+                            <li data-target="#designSlideShow-carousel", data-slide-to="4"></li>
+                        </ol> -->
+                        <!--carousel inner: i.e displayed data-->
+                        <div class="carousel-inner">
+                            <div class="item active embed-responsive embed-responsive-16by9">
+                                <img src="../images/bgimage1.png" alt="" class="img-responsive">
+                                <div class="carousel-caption">
+                                    <div class="h2">
+                                        <span class="fa fa-phone"></span>
+                                        CALL
+                                    </div>
+                                    <div class="col-lg-10 slideGalleryItem">
+                                        <div class="embed-responsive embed-responsive-16by9 itemFrame">
+                                            <img src="../images/bgimage6.png" alt="" class="img-thumbnail">
+                                        </div>
+                                        <div class="caption container-fluid">
+                                            <label for="phone" class="h4">(+237)658972101/678425189</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item embed-responsive embed-responsive-16by9">
+                                <img src="../images/bgimage2.png" alt="" class="img-responsive">
+                                <div class="carousel-caption">
+                                    <div class="h2">
+                                        <span class="fa fa-google"></span>
+                                        MAIL
+                                    </div>
+                                    <div class="col-lg-10 slideGalleryItem">
+                                        <div class="embed-responsive embed-responsive-16by9 itemFrame">
+                                            <img src="../images/bgimage6.png" alt="" class="img-thumbnail">
+                                        </div>
+                                        <div class="caption container-fluid">
+                                            <label for="email" class="h4">ASSACON@GMAIL.COM</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item embed-responsive embed-responsive-16by9">
+                                <img src="../images/bgimage3.png" alt="" class="img-responsive">
+                                <div class="carousel-caption">
+                                    <div class="h2">
+                                        <span class="fa fa-whatsapp"></span>
+                                        WHATSAPP
+                                    </div>
+                                    <div class="col-lg-10 slideGalleryItem">
+                                        <div class="embed-responsive embed-responsive-16by9 itemFrame">
+                                            <img src="../images/bgimage6.png" alt="" class="img-thumbnail">
+                                        </div>
+                                        <div class="caption container-fluid">
+                                            <label for="fa-whatsapp" class="h4">(+237)658972101/678425189</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item embed-responsive embed-responsive-16by9">
+                                <img src="../images/bgimage4.png" alt="" class="img-responsive">
+                                <div class="carousel-caption">
+                                    <div class="h2">
+                                        <span class="fa fa-globe"></span>
+                                        HEAD OFFICE
+                                    </div>
+                                    <div class="col-lg-10 slideGalleryItem">
+                                        <div class="embed-responsive embed-responsive-16by9 itemFrame">
+                                            <img src="../images/bgimage6.png" alt="" class="img-thumbnail">
+                                        </div>
+                                        <div class="caption container-fluid">
+                                            <label for="physicalAddress" class="h4">Textile Road Junction Camdoo-State</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item embed-responsive embed-responsive-16by9">
+                                <img src="../images/bgimage5.png" alt="" class="img-responsive">
+                                <div class="carousel-caption">
+                                    <div class="h2">
+                                        <span class="fa fa-mobile-phone"></span>
+                                        OTHER CONTACTS
+                                    </div>
+                                    <div class="col-lg-10 slideGalleryItem">
+                                        <div class="embed-responsive embed-responsive-16by9 itemFrame">
+                                            <img src="../images/bgimage6.png" alt="" class="img-thumbnail">
+                                        </div>
+                                        <div class="caption container-fluid">
+                                            <label for="anyOther" class="h4">(+237)658972101/678425189</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--carousel controls-->
+                        <a href="#designSlideShow-carousel" data-slide="prev" class="left carousel-control">
+                            <span class="fa fa-sign-out"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a href="#designSlideShow-carousel" data-slide="next" class="right carousel-control">
+                            <span class="fa fa-sign-in"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+
+    <div class="container-fluid text-center">
+        <div id="textBlock1Heading" class="h3 col-sm-9">ABOUT ASSA CONSTRUCTION</div>
+        <div id="textBlock" class="col-sm-9">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad natus dicta animi. Aliquam maiores recusandae aspernatur? Velit harum error, placeat corporis eius fuga maiores laudantium doloribus enim, voluptatibus laboriosam culpa.
+            Dolorem doloribus praesentium quaerat quis eius optio, fuga consequatur dignissimos amet laborum iure pariatur voluptatibus nesciunt magnam alias impedit maxime est enim, labore eligendi fugiat porro blanditiis nemo. Quasi, labore.
+            Expedita quae iusto eius eligendi iste repudiandae obcaecati nulla ex minima eveniet? Fuga, commodi provident excepturi voluptatibus aspernatur pariatur, beatae odit eos iusto magnam harum minima delectus officiis necessitatibus odio!
+        </div>
+    </div>
+
+    <!-- lower body div made of:
+    1)image slider gallery of 4 image sliders
+    2)carousel sliding different text(captions) upon the same image
+    -->
+    <div id="lowerBodyDiv" class="container-fluid">
+        <div id="imageSliderGallery" class="row container-fluid">
+            <div class="col-xs-10 col-sm-6 col-lg-4 slideGalleryItem">
+                <div class="caption container-fluid">
+                    <label for="physicalAddress" class="h3">OUR VISION</label>
+                    <div class="h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sequi eius voluptatem ratione nihil modi, nobis ullam natus dolores consequuntur eveniet, laudantium atque nesciunt quo enim adipisci dolor fugiat quasi?</div>
+                </div>
+                <div class="embed-responsive embed-responsive-4by3 itemFrame">
+                    <img src="../images/bgimage5.png" alt="" class="img-thumbnail">
+                </div>
+            </div>
+            <div class="col-xs-10 col-sm-6 col-lg-4 slideGalleryItem">
+                <div class="caption container-fluid">
+                    <label for="physicalAddress" class="h3">OUR HISTORY</label>
+                    <div class="h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quis nam ex tenetur esse nesciunt officia soluta enim voluptate id harum laboriosam quod aliquid libero, delectus adipisci. Quo, dicta velit!</div>
+                </div>
+                <div class="embed-responsive embed-responsive-4by3 itemFrame">
+                    <img src="../images/bgimage4.png" alt="" class="img-thumbnail">
+                </div>
+            </div>
+            <div class="col-xs-10 col-sm-6 col-lg-4 slideGalleryItem">
+                <div class="caption container-fluid">
+                    <label for="physicalAddress" class="h3">ASIDE CONSTRUCTION</label>
+                    <div class="h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit possimus, expedita eius error et officiis saepe quaerat veritatis deleniti itaque! Vel, dolor minus labore nihil saepe culpa totam nisi accusamus?</div>
+                </div>
+                <div class="embed-responsive embed-responsive-4by3 itemFrame">
+                    <img src="../images/bgimage6.png" alt="" class="img-thumbnail">
+                </div>
+            </div>
+        </div>
+
+        <div id="textBlock2Frame" class="container-fluid row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-9 text-center">
+                <button id="textBlock2Heading" class="container-fluid">
+                    <span class="fa fa-angle-double-left"></span>
+                    CONTACT US HERE
+                    <span class="fa fa-angle-double-right"></span>
+                </button>
+                <div id="textBlock2" class="container-fluid text-left">
+                    <div class="caption container-fluid">
+                        CALL<span class="fa fa-angle-double-right"></span>
+                        <span class="fa fa-phone"></span><br/>
+                        <label for="phone" class="h4">(+237)658972101/678425189</label>
+                    </div>
+                    <hr/>
+                    <div class="caption container-fluid">
+                        EMAIL<span class="fa fa-angle-double-right"></span>
+                        <span class="fa fa-google"></span><br/>
+                        <label for="email" class="h4">ASSACON@GMAIL.COM</label>
+                    </div>
+                    <hr/>
+                    <div class="caption container-fluid">
+                        WHATSAPP<span class="fa fa-angle-double-right"></span>
+                        <span class="fa fa-whatsapp"></span><br/>
+                        <label for="fa-whatsapp" class="h4">(+237)658972101/678425189</label>
+                    </div>
+                    <hr/>
+                    <div class="caption container-fluid">
+                        HEAD OFFICE<span class="fa fa-angle-double-right"></span>
+                        <span class="fa fa-globe"></span><br/>
+                        <label for="physicalAddress" class="h4">Textile Road Junction Camdoo-State</label>
+                    </div>
+                    <hr/>
+                    <div class="caption container-fluid">
+                        OTHER CONTACTS<span class="fa fa-angle-double-right"></span>
+                        <span class="fa fa-mobile-phone"></span><br/>
+                        <label for="anyOther" class="h4">(+237)658972101/678425189</label>
+                    </div>
+               </div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="footer" class="container-fluid row">
+        <div class="col-sm-4 text-center">
+            <a class="head h4 container-fluid" href="#">
+                ABOUT ASSA CONSTRUCTION
+            </a>
+            <div class="container-fluid">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut dolorem eveniet odit eos, cumque adipisci voluptate optio deserunt nulla maiores impedit omnis ipsa voluptas dolor quod voluptatem laborum at ad?
+            </div>
+        </div>
+        <div class="col-sm-4 text-center">
+            <a class="head h4 container-fluid" href="#">
+                MORE ABOUT US
+            </a>
+            <div class="container-fluid">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut dolorem eveniet odit eos, cumque adipisci voluptate optio deserunt nulla maiores impedit omnis ipsa voluptas dolor quod voluptatem laborum at ad?
+            </div>
+        </div>
+        <div class="col-sm-4 text-center">
+            <a class="head h4 container-fluid" href="#">
+                GET IN TOUCH
+            </a>
+            <div class="container-fluid">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut dolorem eveniet odit eos, cumque adipisci voluptate optio deserunt nulla maiores impedit omnis ipsa voluptas dolor quod voluptatem laborum at ad?
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
