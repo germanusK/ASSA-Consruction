@@ -74,34 +74,7 @@
             margin: 3rem 1rem;
             border-radius: 5px 2px;
         }
-
-
-        #mainContainer{
-        height: 60vh;
-        align-content: center;
-        justify-content: baseline;
-        }
-        #middleContainer, #innerContainer{
-            height: 60%;
-            align-self: center;
-            margin: 35% 25% auto 25%;
-            bottom: 20%;
-            justify-items: baseline;
-            justify-self: baseline;
-        }
-        @media screen and (width : 400){
-            #middleContainer, #innerContainer{
-                height: 40%;
-            }
-        }
-        #mainContainer, #middleContainer, #innerContainer{
-            border: 4px inset blue;
-            border-radius: 2rem;
-        }
-        #middleContainer{background-color: blue;}
-        #innerContainer{background: repeating-radial-gradient(#022186, #79887b, #010977);}
-
-
+     
         #uniImageCarousel{
             width: 80%;
             margin: 4rem auto;
@@ -112,6 +85,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            margin-bottom: 4rem;
         }
         /* .slideGalleryItem{
             border-spacing: 1rem;
@@ -122,11 +96,12 @@
         } */
     
         #textBlock, #textBlock2, #textBlock1Heading,#textBlock2Heading{
-            align-self: flex-start;
+            /* align-self: flex-start; */
             font: outline;
             font-weight: bolder;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             color: black;
+            text-justify: distribute;
         }
         #textBlock, #textBlock2{
             font-size: x-large;
@@ -135,15 +110,30 @@
         #textBlock1Heading, #textBlock2Heading{
             font-size: xx-large;
         }
+        #textBlock2Frame{
+            margin-top: 4rem;
+        }
         #footer{
             color: white;
             background-color: black;
             font-weight: bold;
             margin-top: 8rem;
         }
+        #marquee{
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            min-height: 6rem;
+            font-weight: bold;
+            font-style: italic;
+            font-stretch: expanded;
+            border-width: 3px 0;
+            border-color: rgba(0, 0, 0, 0.2);
+            border-style: inset;
+            padding: 1rem 0;
+        }
     </style>
 </head>
-<body>
+<body class=>
     <div id="upperBodyDiv" >
         <div id="headerButtom" class="container-fluid">
              <!--Design of the title and navigation bar-->
@@ -175,10 +165,25 @@
         </div> 
     </div>
 
+    <Marquee id="marquee" class="h3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloremque voluptate amet quidem, dolorum culpa. Sed quasi sequi voluptatibus. Quasi vel fugit eius optio cum quaerat dolor aut magnam qui.</Marquee>
+
+    <div id="textBlock2Frame" class="container-fluid row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-9 text-center">
+            <div id="textBlock2Heading" class="container-fluid">
+                AT YOUR SERVICE
+            </div>
+            <div id="textBlock2" class="container-fluid">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit sapiente sed aliquam laboriosam, facilis explicabo iste ratione cumque ipsum nobis minima ad quibusdam laborum optio sequi nesciunt soluta possimus incidunt?
+                Natus quis iure tenetur recusandae mollitia eligendi, dicta ratione possimus numquam alias molestias laboriosam voluptatem, quos vel officia, qui magnam aliquid soluta. Voluptatibus, quos recusandae. Modi, ullam iure. Provident, quam.
+                Reprehenderit molestias eligendi natus, corrupti sit modi velit neque qui mollitia consectetur assumenda inventore suscipit? Earum ut odio dignissimos, deserunt natus consequuntur sequi veniam vitae, iste saepe, consequatur totam quidem!
+            </div>
+        </div>
+    </div>
 
 
     <div class="container-fluid text-center">
-        <div id="textBlock1Heading" class="h3 col-sm-9">OUR PRODUCT STANDARD</div>
+        <div id="textBlock1Heading" class="h3 col-sm-9">OUR SERVICE STANDARDS</div>
         <div id="textBlock" class="col-sm-9">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad natus dicta animi. Aliquam maiores recusandae aspernatur? Velit harum error, placeat corporis eius fuga maiores laudantium doloribus enim, voluptatibus laboriosam culpa.
             Dolorem doloribus praesentium quaerat quis eius optio, fuga consequatur dignissimos amet laborum iure pariatur voluptatibus nesciunt magnam alias impedit maxime est enim, labore eligendi fugiat porro blanditiis nemo. Quasi, labore.
@@ -186,7 +191,8 @@
         </div>
     </div>
 
-    <!-- lower body div made of:
+
+        <!-- lower body div made of:
     1)image slider gallery of 4 image sliders
     2)carousel sliding different text(captions) upon the same image
     -->
@@ -196,49 +202,36 @@
                 <div class="embed-responsive embed-responsive-4by3 itemFrame">
                     <img src="../images/bgimage5.png" alt="" class="img-thumbnail">
                 </div>
+                <div class="cation text-justify">
+                    <div class="captionHeading h3">Caption Heading #</div>
+                    <div class="captionBody h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore culpa quibusdam, ratione, alias vel ipsa, harum iste cupiditate natus a quod officiis nam ducimus perspiciatis officia similique illo reprehenderit minus.</div>
+                </div>
             </div>
             <div class="col-xs-10 col-sm-6 col-lg-4 slideGalleryItem">
                 <div class="embed-responsive embed-responsive-4by3 itemFrame">
                     <img src="../images/bgimage4.png" alt="" class="img-thumbnail">
+                </div>
+                <div class="cation text-justify">
+                    <div class="captionHeading h3">Caption Heading #</div>
+                    <div class="captionBody h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore culpa quibusdam, ratione, alias vel ipsa, harum iste cupiditate natus a quod officiis nam ducimus perspiciatis officia similique illo reprehenderit minus.</div>
                 </div>
             </div>
             <div class="col-xs-10 col-sm-6 col-lg-4 slideGalleryItem">
                 <div class="embed-responsive embed-responsive-4by3 itemFrame">
                     <img src="../images/bgimage6.png" alt="" class="img-thumbnail">
                 </div>
-            </div>
-            <div class="col-xs-10 col-sm-6 col-lg-4 slideGalleryItem">
-                <div class="embed-responsive embed-responsive-4by3 itemFrame">
-                    <img src="../images/bgimage7.png" alt="" class="img-thumbnail">
-                </div>
-            </div>
-            <div class="col-xs-10 col-sm-6 col-lg-4 slideGalleryItem">
-                <div class="embed-responsive embed-responsive-4by3 itemFrame">
-                    <img src="../images/bgimage7.png" alt="" class="img-thumbnail">
-                </div>
-            </div>
-            <div class="col-xs-10 col-sm-6 col-lg-4 slideGalleryItem">
-                <div class="embed-responsive embed-responsive-4by3 itemFrame">
-                    <img src="../images/bgimage7.png" alt="" class="img-thumbnail">
+                <div class="cation text-justify">
+                    <div class="captionHeading h3">Caption Heading #</div>
+                    <div class="captionBody h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore culpa quibusdam, ratione, alias vel ipsa, harum iste cupiditate natus a quod officiis nam ducimus perspiciatis officia similique illo reprehenderit minus.</div>
                 </div>
             </div>
         </div>
 
-        <div id="textBlock2Frame" class="container-fluid row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-9 text-center">
-                <div id="textBlock2Heading" class="container-fluid">
-                    AT YOUR SERVICE
-                </div>
-                <div id="textBlock2" class="container-fluid">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit sapiente sed aliquam laboriosam, facilis explicabo iste ratione cumque ipsum nobis minima ad quibusdam laborum optio sequi nesciunt soluta possimus incidunt?
-                    Natus quis iure tenetur recusandae mollitia eligendi, dicta ratione possimus numquam alias molestias laboriosam voluptatem, quos vel officia, qui magnam aliquid soluta. Voluptatibus, quos recusandae. Modi, ullam iure. Provident, quam.
-                    Reprehenderit molestias eligendi natus, corrupti sit modi velit neque qui mollitia consectetur assumenda inventore suscipit? Earum ut odio dignissimos, deserunt natus consequuntur sequi veniam vitae, iste saepe, consequatur totam quidem!
-                </div>
-            </div>
-        </div>
+        
         
     </div>
+
+
     <div id="footer" class="container-fluid row">
         <div class="col-sm-4 text-center">
             <a class="head h4 container-fluid" href="#">

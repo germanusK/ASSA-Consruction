@@ -95,12 +95,10 @@
             }
         }
         #mainContainer, #middleContainer, #innerContainer{
-            border: 4px inset blue;
+            border: 4px inset rgba(3, 3, 49, 0.1);
             border-radius: 2rem;
         }
-        #middleContainer{background-color: blue;}
-        #innerContainer{background: repeating-radial-gradient(#022186, #79887b, #010977);}
-
+        #middleContainer{background-color: rgba(3, 3, 49, 0.3);}
 
         #uniImageCarousel{
             width: 80%;
@@ -141,6 +139,18 @@
             font-weight: bold;
             margin-top: 8rem;
         }
+        #marquee{
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            min-height: 6rem;
+            font-weight: bold;
+            font-style: italic;
+            font-stretch: expanded;
+            border-width: 3px 0;
+            border-color: rgba(0, 0, 0, 0.2);
+            border-style: inset;
+            padding: 1rem 0;
+        }
     </style>
 </head>
 <body>
@@ -173,6 +183,7 @@
                 </div>
             </div>
         </div> 
+    <Marquee id="marquee" class="h3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloremque voluptate amet quidem, dolorum culpa. Sed quasi sequi voluptatibus. Quasi vel fugit eius optio cum quaerat dolor aut magnam qui.</Marquee>
         <div id="designSlideShow" class="row">
                 <div class="col-xs-12 col-lg-5" id="zang-fields-left">
                     <div id="mainContainer" class="col-lg-12 text-center">

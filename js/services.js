@@ -85,7 +85,7 @@
     $(uniImageCarouselFrame).css("background-image", "url('"+ourStandardsImages[im++%ourStandardsImages.length]+"')");
     $(uniImageCarouselFrame).fadeIn(4000);}, 16000);
 
-$("#lowerBodyDiv").append(uniImageCarouselFrame);
+$("#textBlock2Frame").after(uniImageCarouselFrame);
 }
 
 
